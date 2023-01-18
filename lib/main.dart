@@ -32,7 +32,7 @@ class Home extends StatefulWidget {
 class _HomeState extends State<Home> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return Scaffold( 
       body: SafeArea(
           child: Center(
         child: LikeButton(
@@ -40,7 +40,7 @@ class _HomeState extends State<Home> {
             return Icon(Icons.favorite,
                 size: 150, color: isLiked ? Colors.purple : Colors.grey);
           },
-          animationDuration: const Duration(seconds: 5),
+          animationDuration: const Duration(seconds: 1),
           size: 150,
           circleColor: const CircleColor(start: Colors.yellow, end: Colors.red),
           bubblesColor: const BubblesColor(
